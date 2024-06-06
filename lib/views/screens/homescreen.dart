@@ -25,11 +25,7 @@ class Homescreen extends StatelessWidget {
                 children: [
                   ZoomTapAnimation(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) {
-                          return Todoscreen();
-                        },
-                      ));
+                      Navigator.pushNamed(context, '/todoscreen');
                     },
                     child: Container(
                       width: 150,
@@ -48,14 +44,7 @@ class Homescreen extends StatelessWidget {
                   ),
                   ZoomTapAnimation(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (ctx) {
-                            return Notescreen();
-                          },
-                        ),
-                      );
+                       Navigator.pushNamed(context, '/notescreen');
                     },
                     child: Container(
                       width: 150,

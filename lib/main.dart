@@ -1,4 +1,8 @@
 import 'package:bottom/views/screens/homepage.dart';
+import 'package:bottom/views/screens/notescreen.dart';
+import 'package:bottom/views/screens/profilepage.dart';
+import 'package:bottom/views/screens/statisticpage.dart';
+import 'package:bottom/views/screens/todoscreen.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -10,9 +14,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      routes: {
+        '/': (context) => Homepage(),
+        '/profile': (context) => Profilepage(),
+        '/statistic': (context) => Statisticpage(),
+        '/todoscreen': (context) => TodoScreenPage(),
+        '/notescreen': (context) => NotescreenPage(),
+      },
     );
   }
 }

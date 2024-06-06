@@ -6,14 +6,14 @@ import 'package:bottom/views/widgets/addnotes.dart';
 import 'package:bottom/views/widgets/edittask.dart';
 import 'package:bottom/views/widgets/noteswidget.dart';
 
-class Notescreen extends StatefulWidget {
-  const Notescreen({super.key});
+class NotescreenPage extends StatefulWidget {
+  const NotescreenPage({super.key});
 
   @override
-  State<Notescreen> createState() => _NotescreenState();
+  State<NotescreenPage> createState() => _NotescreenPageState();
 }
 
-class _NotescreenState extends State<Notescreen> {
+class _NotescreenPageState extends State<NotescreenPage> {
   final Notescontroller noteController = Notescontroller();
 
   Future<void> editNote(Note note) async {

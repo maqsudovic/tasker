@@ -6,14 +6,14 @@ import 'package:bottom/views/widgets/taskswidget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Todoscreen extends StatefulWidget {
-  const Todoscreen({super.key});
+class TodoScreenPage extends StatefulWidget {
+  const TodoScreenPage({super.key});
 
   @override
-  State<Todoscreen> createState() => _TodoscreenState();
+  State<TodoScreenPage> createState() => _TodoScreenPageState();
 }
 
-class _TodoscreenState extends State<Todoscreen> {
+class _TodoScreenPageState extends State<TodoScreenPage> {
   final TasksController taskController = TasksController();
 
   Future<void> addTask() async {
